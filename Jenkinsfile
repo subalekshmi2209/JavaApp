@@ -7,7 +7,7 @@ pipeline{
 
     parameters{
 
-        choice(name: 'action', choices: 'create\ndelete', description: 'Choose create/Destroy')
+        choice(name: 'action', choices: 'create\ndelete', description: 'Choose create/Destroyy')
         string(name: 'ImageName', description: "name of the docker build", defaultValue: 'JavaApp')
         string(name: 'ImageTag', description: "tag of the docker build", defaultValue: 'Latest')
         string(name: 'DockerHubUser', description: "name of the Application", defaultValue: 'surendarm2207')
@@ -20,7 +20,7 @@ pipeline{
             steps{
             gitCheckout(
                 branch: "main",
-                url: "https://github.com/praveen1994dec/Java_app_3.0.git"
+                url: "https://github.com/subalekshmi2209/JavaApp.git"
             )
             }
         }
