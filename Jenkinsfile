@@ -8,7 +8,7 @@ pipeline{
     parameters{
 
         choice(name: 'action', choices: 'create\ndelete', description: 'Choose create/Destroyy')
-        string(name: 'ImageName', description: "name of the docker build", defaultValue: 'JavaApp')
+        string(name: 'ImageName', description: "name of the docker build", defaultValue: 'javaspringbootapp')
         string(name: 'ImageTag', description: "tag of the docker build", defaultValue: 'Latest')
         string(name: 'DockerHubUser', description: "name of the Application", defaultValue: 'surendarm2207')
     }
