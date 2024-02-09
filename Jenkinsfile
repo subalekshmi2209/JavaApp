@@ -49,7 +49,7 @@ pipeline{
             steps{
                script{
                    
-                   def SonarQubecredentialsId = 'sonarQubeApi'
+                   def SonarQubecredentialsId = 'sonarQubeApii'
                    statiCodeAnalysis(SonarQubecredentialsId)
                }
             }
@@ -59,7 +59,7 @@ pipeline{
             steps{
                script{
                    
-                   def SonarQubecredentialsId = 'sonarQubeApi'
+                   def SonarQubecredentialsId = 'sonarQubeApii'
                    QualityGateStatus(SonarQubecredentialsId)
                }
             }
